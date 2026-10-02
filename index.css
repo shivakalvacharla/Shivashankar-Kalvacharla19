@@ -1355,3 +1355,86 @@ a {
     scroll-behavior: auto !important;
   }
 }
+/* Card Hover & Pointer */
+.cert-card {
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: #00e5ff !important;
+  box-shadow: 0 8px 24px rgba(0, 229, 255, 0.25);
+}
+
+/* Modal Overlay */
+.cert-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 15, 29, 0.85);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.modal-box {
+  position: relative;
+  width: 85%;
+  max-width: 950px;
+  height: 85vh;
+  background: #0d1527;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Header inside modal */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #090e1c;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.open-tab-btn {
+  color: #00e5ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.open-tab-btn:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.close-modal {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #00e5ff;
+}
+
+/* Iframe displaying the PDF */
+#certPdf {
+  width: 100%;
+  flex: 1;
+  border: none;
+}

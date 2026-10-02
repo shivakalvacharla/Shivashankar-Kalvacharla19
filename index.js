@@ -113,3 +113,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("certModal");
+  const certPdf = document.getElementById("certPdf");
+  const openTabBtn = document.getElementById("downloadCertBtn");
+  const closeBtn = document.querySelector(".close-modal");
+
+  // Open modal on card click
+  document.querySelectorAll(".cert-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const fileUrl = card.getAttribute("data-cert");
+      if (!fileUrl) return;
+
+      certPdf.src = fileUrl;
+      openTabBtn.href = fileUrl;
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close handler
+  const closeModal = () => {
+    modal.style.display = "none";
+    certPdf.src = "";
+    openTabBtn.href = "";
+  };
+
+  closeBtn.addEventListener("click", closeModal);
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      closeModal();
+    }
+  });
+});

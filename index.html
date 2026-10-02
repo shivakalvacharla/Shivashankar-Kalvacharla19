@@ -530,60 +530,69 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="section-block bg-subtle">
-      <div class="container">
-        <div class="section-badge">CREDENTIALS</div>
-        <h2 class="section-heading">Certifications & Training</h2>
-        <p class="section-subtext">Recognized industrial credentials spanning Enterprise Java, Cloud AI, and Applied Machine Learning.</p>
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications-container">
 
-        <div class="certifications-grid">
-          <div class="cert-card">
-            <div class="cert-icon-wrapper">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
-            <div class="cert-details">
-              <h3 class="cert-name">Java Full Stack Development</h3>
-              <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Wipro TalentNext</p>
-              <span class="cert-year"><i class="fa-regular fa-calendar-check"></i> 2025</span>
-            </div>
-          </div>
+  <!-- 1. Java Full Stack (Wipro TalentNext) -->
+  <div class="cert-card" data-cert="assets/certificates/Wipro J_252530270_Kalvacharla Shivashankar.pdf">
+    <div class="cert-icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="#00e5ff">
+        <path d="M12 2l2.4 5.3 5.8.5-4.3 3.9 1.3 5.7L12 14.5l-5.2 2.9 1.3-5.7-4.3-3.9 5.8-.5z"/>
+      </svg>
+    </div>
+    <h3>Java Full Stack Development</h3>
+    <p class="issuer">🏛️ Wipro TalentNext</p>
+    <p class="year">📅 2025</p>
+  </div>
 
-          <div class="cert-card">
-            <div class="cert-icon-wrapper">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
-            <div class="cert-details">
-              <h3 class="cert-name">Python Full Stack Development</h3>
-              <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Eduskills Academy, AICTE</p>
-              <span class="cert-year"><i class="fa-regular fa-calendar-check"></i> 2025</span>
-            </div>
-          </div>
+  <!-- 2. Python Full Stack (EduSkills) -->
+  <div class="cert-card" data-cert="assets/certificates/eduskillspythonfullstack.pdf">
+    <div class="cert-icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="#00e5ff">
+        <path d="M12 2l2.4 5.3 5.8.5-4.3 3.9 1.3 5.7L12 14.5l-5.2 2.9 1.3-5.7-4.3-3.9 5.8-.5z"/>
+      </svg>
+    </div>
+    <h3>Python Full Stack Development</h3>
+    <p class="issuer">🏛️ Eduskills Academy, AICTE</p>
+    <p class="year">📅 2025</p>
+  </div>
 
-          <div class="cert-card">
-            <div class="cert-icon-wrapper">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
-            <div class="cert-details">
-              <h3 class="cert-name">Microsoft Azure AI Internship Certification</h3>
-              <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Edunet Foundation, AICTE</p>
-              <span class="cert-year"><i class="fa-regular fa-calendar-check"></i> 2025</span>
-            </div>
-          </div>
+  <!-- 3. AI Azure (Edunet / Microsoft) -->
+  <div class="cert-card" data-cert="assets/certificates/edunet microsoft.pdf">
+    <div class="cert-icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="#00e5ff">
+        <path d="M12 2l2.4 5.3 5.8.5-4.3 3.9 1.3 5.7L12 14.5l-5.2 2.9 1.3-5.7-4.3-3.9 5.8-.5z"/>
+      </svg>
+    </div>
+    <h3>Microsoft Azure AI Internship Certification</h3>
+    <p class="issuer">🏛️ Edunet Foundation, AICTE</p>
+    <p class="year">📅 2025</p>
+  </div>
 
-          <div class="cert-card">
-            <div class="cert-icon-wrapper">
-              <i class="fa-solid fa-certificate"></i>
-            </div>
-            <div class="cert-details">
-              <h3 class="cert-name">AI/ML Engineering Certification</h3>
-              <p class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Eduskills, Google for Developers, AICTE</p>
-              <span class="cert-year"><i class="fa-regular fa-calendar-check"></i> 2025</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- 4. AI-ML Virtual Internship (EduSkills / Google for Developers) -->
+  <div class="cert-card" data-cert="assets/certificates/EduskillsAIML.pdf">
+    <div class="cert-icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="#00e5ff">
+        <path d="M12 2l2.4 5.3 5.8.5-4.3 3.9 1.3 5.7L12 14.5l-5.2 2.9 1.3-5.7-4.3-3.9 5.8-.5z"/>
+      </svg>
+    </div>
+    <h3>AI/ML Engineering Certification</h3>
+    <p class="issuer">🏛️ Eduskills, Google for Developers, AICTE</p>
+    <p class="year">📅 2025</p>
+  </div>
 
+</section>
+
+<!-- Modal Container (Place this right before </body>) -->
+<div id="certModal" class="cert-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <a id="downloadCertBtn" href="" target="_blank" rel="noopener noreferrer" class="open-tab-btn">Open in New Tab ↗</a>
+      <span class="close-modal">&times;</span>
+    </div>
+    <iframe id="certPdf" src="" frameborder="0"></iframe>
+  </div>
+</div>
     <!-- Education Section -->
     <section id="education" class="section-block">
       <div class="container">
